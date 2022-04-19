@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PostContainer/>
+    <SmartContainer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PostContainer from '@/components/PostContainer.vue'
+import SmartContainer from '@/components/SmartContainer.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PostContainer,
+    SmartContainer
   }
 }
 </script>
@@ -24,5 +26,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+html{
+  background-color: bisque;
 }
 </style>
